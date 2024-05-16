@@ -12,7 +12,7 @@
         <img class="header-image" src="assets/images/webqlo.png" alt="webqlo-logo">
         <ul class="header-nav-bar">
             <li class="nav-bar-item"><a href="https://www.webqlo.com/who-we-are">Who We Are</a></li>
-            <li class="nav-bar-item"><a href="https://www.webqlo.com/what-we-do">What We Do</a><span class="header-icon" id="header-icon">&#11206;</span></li>
+            <li class="nav-bar-item"><a id="dropdown" href="https://www.webqlo.com/what-we-do">What We Do</a><span class="header-icon" id="header-icon">&#11206;</span></li>
             <li class="nav-bar-item"><a href="https://www.webqlo.com/-our-work">Our Work</a></li>
             <li class="nav-bar-item"><a href="https://www.webqlo.com/headlines">Headlines</a></li>
             <li class="nav-bar-item"><a href="https://www.webqlo.com/contact-us">Contact Us</a></li>
@@ -32,13 +32,20 @@
     </div>
 
     <script>
+        dropdown = document.getElementById("dropdown");
+        arrowDown = document.getElementById("header-icon");
         subMenu = document.getElementById("sub-header");
-        document.getElementById("header-icon").addEventListener("click", (event) => {
+        
+        arrowDown.addEventListener("click", (event) => {
             if (subMenu.style.display == "none") {
                 subMenu.style.display = "block";
+                arrowDown.classList.add("header-focus");
+                dropdown.classList.add("header-focus");
             }
             else {
-                subMenu.style.display = "none"
+                subMenu.style.display = "none";
+                arrowDown.classList.remove("header-focus");
+                dropdown.classList.remove("header-focus");
             }
         });
     </script>

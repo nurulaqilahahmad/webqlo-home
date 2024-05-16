@@ -40,12 +40,17 @@ body {
     padding: 10px;
     font-size: 12px;
     cursor: default;
+    line-height: 0rem;
 }
 
 .nav-bar-item a:hover,
 .header-icon:hover,
 .sub-header-nav-bar a:hover {
     color: #b5b5ac;
+}
+
+.header-focus {
+    color: white !important; 
 }
 
 .sub-header {
@@ -67,12 +72,12 @@ body {
 }
 
 .sub-header-nav-bar li {
-    padding: 10px 15px;
+    padding: 10px 5px;
 }
 
 .sub-header-nav-bar a {
     color: #929289;
-    font-weight: 100;
+    font-weight: 200;
     text-decoration: none;
     text-transform: capitalize;
 }
