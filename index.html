@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/images/favicon-32x32.png" rel="shortcut icon">
+    <link rel="stylesheet" href="style.css">
+    <title>WEBQLO | Top Digital Marketing Agency in Malaysia</title>
+</head>
+<body>
+    <div class="header">
+        <img class="header-image" src="assets/images/webqlo.png" alt="webqlo-logo">
+        <ul class="header-nav-bar">
+            <li class="nav-bar-item"><a href="https://www.webqlo.com/who-we-are">Who We Are</a></li>
+            <li class="nav-bar-item"><a href="https://www.webqlo.com/what-we-do">What We Do</a><span class="header-icon" id="header-icon">&#11206;</span></li>
+            <li class="nav-bar-item"><a href="https://www.webqlo.com/-our-work">Our Work</a></li>
+            <li class="nav-bar-item"><a href="https://www.webqlo.com/headlines">Headlines</a></li>
+            <li class="nav-bar-item"><a href="https://www.webqlo.com/contact-us">Contact Us</a></li>
+        </ul>        
+    </div>
+    <div class="sub-header" id="sub-header">
+        <ul class="sub-header-nav-bar">
+            <li><a href="https://www.webqlo.com/integrated-digital-marketing">Integrated Digital Marketing</a></li>
+            <li><a href="https://www.webqlo.com/social-media-marketing">Social Media Marketing</a></li>
+            <li><a href="https://www.webqlo.com/performance-marketing">Performance Marketing</a></li>
+            <li><a href="https://www.webqlo.com/social-media-intelligence">Social Media Intelligence</a></li>
+            <li><a href="https://www.webqlo.com/our-work?type=web-design-and-development">Web Design & Development</a></li>
+            <li><a href="https://www.webqlo.com/our-work?type=ai-and-data-science">AI & Data Science</a></li>
+            <li><a href="https://www.webqlo.com/digital-experiential-marketing">Digital Experiential Marketing</a></li>
+            <li><a href="https://www.webqlo.com/content-marketing">Content Marketing</a></li>
+        </ul>
+    </div>
+
+    <script>
+        subMenu = document.getElementById("sub-header");
+        document.getElementById("header-icon").addEventListener("click", (event) => {
+            if (subMenu.style.display == "none") {
+                subMenu.style.display = "block";
+            }
+            else {
+                subMenu.style.display = "none"
+            }
+        });
+    </script>
+</body>
+</html>
