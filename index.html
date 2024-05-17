@@ -8,6 +8,7 @@
     <title>WEBQLO | Top Digital Marketing Agency in Malaysia</title>
 </head>
 <body>
+    <!-- Header -->
     <div class="header">
         <img class="header-image" src="assets/images/webqlo.png" alt="webqlo-logo">
         <ul class="header-nav-bar">
@@ -18,6 +19,7 @@
             <li class="nav-bar-item"><a href="https://www.webqlo.com/contact-us">Contact Us</a></li>
         </ul>        
     </div>
+
     <div class="sub-header" id="sub-header">
         <ul class="sub-header-nav-bar">
             <li><a href="https://www.webqlo.com/integrated-digital-marketing">Integrated Digital Marketing</a></li>
@@ -30,6 +32,28 @@
             <li><a href="https://www.webqlo.com/content-marketing">Content Marketing</a></li>
         </ul>
     </div>
+    <!-- End Of Header -->
+
+    <!-- Banner Slider -->
+    <div class="slider">
+        <div class="banner banner1">
+            <h1 class="banner1-text">Download <br> Free Report <br> in 60 Secs</h1>
+            <img src="assets/images/main_banner_3.png" alt="" id="banner1">
+            <button class="banner1-button">Download Now</button>
+        </div>
+        <!-- <div class="banner">
+            <h1 class="banner2-text">Download <br> Free Report <br> in 60 Secs</h1>
+            <div><img src="assets/images/main_banner_1_desktop.png" alt="" id="banner2"></div>
+            <button class="banner2-button">Discover Now</button>
+        </div> -->
+        <div class="slider-nav">
+            <span class="active-circle circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </div>
+    <!-- End of Slider -->
 
     <script>
         dropdown = document.getElementById("dropdown");
@@ -48,6 +72,14 @@
                 dropdown.classList.remove("header-focus");
             }
         });
+
+        window.onclick = function(event) {
+            if (event.target == subMenu) {
+                subMenu.style.display = "none";
+                arrowDown.classList.remove("header-focus");
+                dropdown.classList.remove("header-focus");
+            }
+        }
     </script>
 </body>
 </html>
