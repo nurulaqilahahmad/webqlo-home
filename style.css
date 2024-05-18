@@ -109,14 +109,35 @@ body {
     background-color: #869791;
 }
 
-.active-circle {
+.active-circle, .active-circle:hover {
     background-color: #90a4e4;
 }
 
+.slideLeft {
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+}
+
+.slideRight {
+    animation-name: slideRight;
+    animation-duration: 0.5s;
+}
+
+/* Slide animation */
+@keyframes slideLeft {
+    from {right: -100%}
+    to {right: 0}
+}
+
+@keyframes slideRight {
+    from {right: 100%}
+    to {right: 0}
+}
+
 .banner {
-    /* display: none; */
     height: 100%;
-    
+    display: none;
+    position: relative;
 }
 
 .banner1 {
@@ -168,14 +189,11 @@ body {
 }
 
 #banner2 {
-    height: fit-content;
+    height: 100%;
     width: 100%;
 }
 
 .banner2-button {
-    position: absolute;
-    float: none;
-    top: 70%;
     margin-left: 96px;
     padding: 10px 48px;
     font-weight: 700;
@@ -189,6 +207,118 @@ body {
 }
 
 .banner2-button:hover {
+    background-color: #90a5e8;
+    color: black;
+    box-shadow: 3px 3px 0 0 #90a5e8;
+    transition: 300ms;
+}
+
+.banner2-text {
+    position: absolute;
+    float: none;
+    top: 25%;
+    left: 37%;
+    margin-left: 96px;
+    width: 46%;
+}
+
+.banner2-text1 {
+    position: relative;
+    font-weight: 400;
+    margin-left: 96px;
+    font-size: 2em;
+    color: white;
+}
+
+.banner2-text2 {
+    position: relative;
+    padding: 12px 0px;
+    margin-left: 96px;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: white;
+}
+
+.banner3-text {
+    position: absolute;
+    float: none;
+    top: 25%;
+    left: 5%;
+    margin-left: 96px;
+    width: 46%;
+}
+
+.banner3-text1 {
+    position: relative;
+    font-weight: 400;
+    margin-left: 96px;
+    font-size: 2em;
+    color: #294995;
+}
+
+.banner3-text2 {
+    position: relative;
+    padding: 12px 0px;
+    margin-left: 96px;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #294995;
+}
+
+.banner3-button {
+    margin-left: 96px;
+    padding: 10px 48px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-right: 3px solid #45d2f0;
+    border-bottom: 3px solid #45d2f0;
+    box-shadow: 3px 3px 0 0 black;
+}
+
+.banner3-button:hover {
+    background-color: #90a5e8;
+    color: #294995;
+    box-shadow: 3px 3px 0 0 #90a5e8;
+    transition: 300ms;
+}
+
+.banner4 {
+    background-color: black;
+}
+
+#banner4 {
+    position: relative;
+    width: 960px;
+    float: none;
+    left: 18%;
+}
+
+.banner4-text {
+    position: absolute;
+    float: none;
+    top: 55%;
+    left: 8%;
+    margin-left: 96px;
+    width: 46%;
+}
+
+.banner4-button {
+    margin-left: 96px;
+    padding: 10px 48px;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    box-shadow: 3px 3px 0 0 white;
+}
+
+.banner4-button:hover {
     background-color: #90a5e8;
     color: black;
     box-shadow: 3px 3px 0 0 #90a5e8;
