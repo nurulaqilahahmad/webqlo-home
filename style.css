@@ -3,12 +3,57 @@ body {
     margin: 0 auto;
 }
 
+.text-color-gradient-1 {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #2880ef, #f432bb);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.text-color-gradient-2 {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #2489ff, #e396ff 50%, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 100%;
+    width: max-content;
+}
+
+.text-color-gradient-3 {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #ca003b, #ff99f0 50%, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 100%;
+    width: max-content;
+}
+
+.text-color-gradient-4 {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #54a4fd, #00a 50%, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 100%;
+    width: max-content;
+}
+
+.text-color-gradient-5 {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #d4ad45, #580b7c 50%, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 100%;
+    width: max-content;
+}
+
 .header {
     background-color: #302c2c;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .header-image {
@@ -159,10 +204,6 @@ body {
     margin-left: 96px;
     font-weight: 700;
     font-size: 4em;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(90deg, #2880ef, #f432bb);
-    -webkit-background-clip: text;
-    background-clip: text;
 }
 
 .banner1-button {
@@ -323,4 +364,39 @@ body {
     color: black;
     box-shadow: 3px 3px 0 0 #90a5e8;
     transition: 300ms;
+}
+
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 48px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.services-section {
+    margin: 96px 128px;
+    width: 80%;
+}
+
+.services-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-item {
+    width: 45%;
+    height: 40%;
+    margin: 12px 0px;
+}
+
+.service-item img {
+    width: 530px;
+}
+
+.description {
+    font-size: 19px;
 }
